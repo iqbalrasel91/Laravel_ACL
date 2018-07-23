@@ -2,6 +2,23 @@
 
 	use Illuminate\Support\Facades\DB;
 
+    function nCount($data = null)
+    {
+        if ($data) {
+            if (is_array($data)) {
+                return count($data);
+            } elseif (is_object($data)) {
+                $data_o = $data->toArray();
+                if (is_array($data_o)) {
+                    return count($data_o);
+                }
+                return 0;
+            }
+            return 0;
+        }
+        return 0;
+    }
+
 	function dateConvertFormtoDB($date){
 		if(!empty($date)){
 			return date("Y-m-d",strtotime(str_replace('/','-',$date)));
