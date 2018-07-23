@@ -16,7 +16,7 @@ class ModuleSeeder extends Seeder
         DB::table('modules')->insert(
             [
                 ['name' => 'Administration','icon_class' => 'mdi mdi-contacts'],
-                ['name' => 'User','icon_class' => 'mdi mdi-account-alert'],
+                ['name' => 'Users','icon_class' => 'mdi mdi-account-alert'],
             ]
         );
     }

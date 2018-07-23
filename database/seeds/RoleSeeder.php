@@ -20,8 +20,7 @@ class RoleSeeder extends Seeder
                 ['role_name' => 'Super Admin','created_at'=>$time,'updated_at'=>$time],
                 ['role_name' => 'Admin','created_at'=>$time,'updated_at'=>$time],
                 ['role_name' => 'HR','created_at'=>$time,'updated_at'=>$time],
-                ['role_name' => 'Accounts','created_at'=>$time,'updated_at'=>$time],
-                ['role_name' => 'Developer','created_at'=>$time,'updated_at'=>$time],
+
             ]
 
         );
